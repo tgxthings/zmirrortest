@@ -256,7 +256,7 @@ dispatcher.add_handler(CallbackQueryHandler(pop_up_stats, pattern=f"^{str(THREE)
 
 def get_readable_message():
     with download_dict_lock:
-        msg = f"Powered By <b>{TITLE_NAME}</b>"
+        msg = f"Made By <b><a href=tg://settings/>🙂🙂</a></b>"
         if STATUS_LIMIT is not None:
             tasks = len(download_dict)
             global pages

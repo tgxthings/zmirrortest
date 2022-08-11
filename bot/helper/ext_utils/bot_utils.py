@@ -249,8 +249,6 @@ T: {disk_t}GB | F: {disk_f}GB
 
 Working For: {currentTime}
 T-DL: {recv} | T-UL: {sent}
-
-Made with ❤️ by Dawn
 """
 
 #---Thanks for deleting my name ❤️ Appreciate it---#
@@ -262,7 +260,7 @@ dispatcher.add_handler(CallbackQueryHandler(pop_up_stats, pattern=f"^{str(THREE)
 
 def get_readable_message():
     with download_dict_lock:
-        msg = f"Powered By <b>{TITLE_NAME}</b>"
+       
         if STATUS_LIMIT is not None:
             tasks = len(download_dict)
             global pages
